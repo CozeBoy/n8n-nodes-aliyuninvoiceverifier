@@ -12,17 +12,17 @@
     "OCR"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/yourusername/n8n-nodes-aliyuninvoiceverifier#readme",
+  "homepage": "https://github.com/CozeBoy/n8n-nodes-aliyuninvoiceverifier#readme",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "jiaoyanggege",
+    "email": "tonull@foxmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/n8n-nodes-aliyuninvoiceverifier.git"
+    "url": "git+https://github.com/CozeBoy/n8n-nodes-aliyuninvoiceverifier.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/n8n-nodes-aliyuninvoiceverifier/issues"
+    "url": "https://github.com/CozeBoy/n8n-nodes-aliyuninvoiceverifier/issues"
   },
   "main": "index.js",
   "scripts": {
