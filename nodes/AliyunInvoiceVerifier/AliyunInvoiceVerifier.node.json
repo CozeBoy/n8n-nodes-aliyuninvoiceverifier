@@ -1,0 +1,19 @@
+{
+  "node": "n8n-nodes-aliyuninvoiceverifier.AliyunInvoiceVerifier",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Utility"],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://help.aliyun.com/zh/ocr/developer-reference/api-ocr-api-2021-07-07-verifyvatinvoice"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://github.com/your-org/n8n-nodes-aliyuninvoiceverifier"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "AliyunInvoiceVerifier": {
+      "displayName": "阿里云发票核验",
+      "description": "通过阿里云 API 验证增值税发票的真伪",
+      "properties": {
+        "invoiceCode": {
+          "displayName": "发票代码",
+          "description": "发票代码（10-12位数字）。数电发票（类型代码31、32）时可为空。"
+        },
+        "invoiceNo": {
+          "displayName": "发票号码",
+          "description": "发票号码（8-20位数字，不同类型发票位数不同）"
+        },
+        "invoiceDate": {
+          "displayName": "开票日期",
+          "description": "开票日期，格式：YYYYMMDD（例如：20231015）"
+        },
+        "invoiceSum": {
+          "displayName": "发票金额",
+          "description": "发票金额。根据发票类型填写：类型01、03、20填写不含税金额；类型15填写车价合计；类型31、32填写含税金额；区块链发票填写不含税金额。"
+        },
+        "verifyCode": {
+          "displayName": "校验码",
+          "description": "校验码后6位。发票类型04、10、11、14时必填，区块链发票时必填。"
+        },
+        "invoiceKind": {
+          "displayName": "发票类型",
+          "description": "选择发票类型。区块链发票时，所有参数均为必填。",
+          "options": {
+            "normal": "普通发票",
+            "blockchain": "区块链发票"
+          }
+        },
+        "continueOnFail": {
+          "displayName": "失败时继续",
+          "description": "当发票核验失败时是否继续执行下一项。启用后，错误信息会包含在输出中。"
+        }
+      }
+    }
+  }
+}
+

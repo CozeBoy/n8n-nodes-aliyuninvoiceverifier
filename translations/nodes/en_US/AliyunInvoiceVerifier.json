@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "AliyunInvoiceVerifier": {
+      "displayName": "Aliyun Invoice Verifier",
+      "description": "Verify Chinese VAT invoice authenticity via Aliyun API",
+      "properties": {
+        "invoiceCode": {
+          "displayName": "Invoice Code",
+          "description": "Invoice code (10-12 digits). Optional for digital invoices (type 31, 32)."
+        },
+        "invoiceNo": {
+          "displayName": "Invoice Number",
+          "description": "Invoice number (8-20 digits, varies by invoice type)"
+        },
+        "invoiceDate": {
+          "displayName": "Invoice Date",
+          "description": "Invoice date, format: YYYYMMDD (e.g., 20231015)"
+        },
+        "invoiceSum": {
+          "displayName": "Invoice Amount",
+          "description": "Invoice amount. Depends on invoice type: type 01/03/20 enter amount excluding tax; type 15 enter vehicle price; type 31/32 enter amount including tax; blockchain invoice enter amount excluding tax."
+        },
+        "verifyCode": {
+          "displayName": "Verify Code",
+          "description": "Last 6 digits of verify code. Required for invoice type 04/10/11/14 and blockchain invoices."
+        },
+        "invoiceKind": {
+          "displayName": "Invoice Kind",
+          "description": "Select invoice kind. All parameters are required for blockchain invoices.",
+          "options": {
+            "normal": "Normal Invoice",
+            "blockchain": "Blockchain Invoice"
+          }
+        },
+        "continueOnFail": {
+          "displayName": "Continue On Fail",
+          "description": "Continue executing if invoice verification fails. Error information will be included in the output."
+        }
+      }
+    }
+  }
+}
+
